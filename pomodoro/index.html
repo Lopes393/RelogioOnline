@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset = UTF-8">
+        <title>Relógio Online</title>
+        <link rel="stylesheet" href="/Assets/css/style.css">
+        <link rel="stylesheet" href="/Assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/Assets/css/bootstrap.css">
+    </head>
+    <body onload="clock();getDados()">
+        <div class="container">
+            <div class="row">
+                <div class="conteudo col-md-12">
+                    <div id= "relogio" class="text-center" > </div>
+                    <div id="data" class="text-center"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="conteudosecundario col-md-6 text-center">
+                    <p class="reloj">
+                        <span id="horas">00</span> : 
+                        <span id="minutos">00</span> : 
+                        <span id="segundos">00</span> : 
+                        <span id="centesimas">00</span>
+                    </p>
+                    <div id="botoes">
+                        <input type="button" class="boton" id="inicio" value=" &#9658;" onclick="cronometro()" alt="Play">
+                        <input type="button" class="boton" id="parar" value=" &#8718;" onclick="parar()" alt="Stop">
+                        <input type="button" class="boton" id="reinicio" value=" &#8634;" onclick="reinicio()" alt="Reset" >
+                    </div>
+                </div>
+                <div class="conteudotres col-md-6 text-center">
+                    <p class="reloj">
+                        <span id="hora">00</span> : 
+                        <span id="minuto">25</span> : 
+                        <span id="segundo">00</span>
+                    </p>
+                    <div id="botoes">
+                        <input type="button" class="boton" id="iniciar" value=" &#9658;" onclick="pomodoro()">
+                        <input type="button" class="boton" id="para" value=" &#8718;" onclick="paraPomodoro()">
+                        <input type="button" class="boton" id="reiniciar" value=" &#8634;" onclick="reiniciar()">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="anuncio col-md-10"></div>
+
+        <script src="/Assets/js/script.js"></script>
+    </body>
+</html>
