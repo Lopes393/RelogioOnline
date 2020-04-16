@@ -7,7 +7,7 @@ html, body{
 }
 @font-face{
     font-family: digital-7;
-    src: url(/Assets/fonts/digital-7\ \(italic\).ttf);
+    src: url(/pomodoro/Assets/fonts/digital-7\ \(italic\).ttf);
 }
 .conteudo{
     width: 50%;
